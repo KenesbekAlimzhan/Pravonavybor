@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#b21f2d">
+    <meta
+        name="description"
+        content="Право на свой ритм — город, в котором время подстраивается под человека."
+    >
+
+    <title>Право на свой ритм</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="grain"></div>
+
+<!-- ================= NAVIGATION ================= -->
+
+<header class="nav">
+
+    <a href="#top" class="logo">
+        ПРАВО
+        <span>НА СВОЙ РИТМ</span>
+    </a>
+
+    <nav class="desktop-nav">
+        <a href="#problem">Проблема</a>
+        <a href="#rhythm">Твой ритм</a>
+        <a href="#future">Город будущего</a>
+    </nav>
+
+    <button class="menu-button" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+    </button>
+
+</header>
+
+<!-- MOBILE MENU -->
+
+<div class="mobile-menu">
+    <a href="#problem">Проблема</a>
+    <a href="#rhythm">Твой ритм</a>
+    <a href="#future">Город будущего</a>
+    <a href="#vote">Голосование</a>
+</div>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-text reveal">
+
+        <div class="eyebrow">
+            ГОРОД • ВРЕМЯ • ЧЕЛОВЕК
+        </div>
+
+        <h1>
+            ПРАВО
+
+            НА СВОЙ
+
+            <em>РИТМ</em>
+        </h1>
+
+        <p class="hero-subtitle">
+            Не человек подстраивается
+
+            под время.
+            <strong>Время подстраивается
+
+            под человека.</strong>
+        </p>
+
+        <a href="#rhythm" class="main-button">
+            Найти свой ритм
+            <span>↘</span>
+        </a>
+
+    </div>
+
+    <!-- BIG CLOCK -->
+
+    <div class="hero-visual">
+
+        <div class="burst burst-1"></div>
+        <div class="burst burst-2"></div>
+
+        <div class="clock">
+
+            <div class="clock-number n12">12</div>
+            <div class="clock-number n3">3</div>
+            <div class="clock-number n6">6</div>
+            <div class="clock-number n9">9</div>
+
+            <div class="clock-hand hand-hour"></div>
+            <div class="clock-hand hand-minute"></div>
+
+            <div class="clock-center"></div>
+
+        </div>
+
+        <div class="floating-card card-one">
+            06:00
+            <small>жаворонок</small>
+        </div>
+
+        <div class="floating-card card-two">
+            12:00
+            <small>пик</small>
+        </div>
+
+        <div class="floating-card card-three">
+            22:00
+            <small>сова</small>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PROBLEM ================= -->
+
+<section class="section problem" id="problem">
+
+    <div class="section-label">
+        01 / ПРОБЛЕМА
+    </div>
+
+    <div class="problem-grid">
+
+        <div class="problem-title reveal">
+
+            <h2>
+                ОДИН ГОРОД.
+
+                <span>ОДИН РИТМ?</span>
+            </h2>
+
+            <div class="question-mark">?</div>
+
+        </div>
+
+        <div class="problem-text reveal">
+
+            <p class="big-text">
+                Будильник звонит в 7:00.
+            </p>
+
+            <p>
+                Город просыпается практически одновременно:
+                транспорт, офисы, школы, университеты.
+            </p>
+
+            <p>
+                Но люди работают по-разному.
+                Для одного 7 утра — начало дня.
+                Для другого — середина ночи.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- TIME LINE -->
+
+    <div class="timeline">
+
+        <div class="timeline-line"></div>
+
+        <div class="time-item">
+            <strong>07:00</strong>
+            <span>БУДИЛЬНИК</span>
+        </div>
+
+        <div class="time-item">
+            <strong>09:00</strong>
+            <span>РАБОТА</span>
+        </div>
+
+        <div class="time-item">
+            <strong>18:00</strong>
+            <span>ДОМ</span>
+        </div>
+
+        <div class="time-item">
+            <strong>23:00</strong>
+            <span>СОН</span>
+        </div>
+
+
+</div>
+
+</section>
+
+<!-- ================= RHYTHM ================= -->
+
+<section class="section rhythm" id="rhythm">
+
+    <div class="section-label">
+        02 / ТВОЙ РИТМ
+    </div>
+
+    <div class="section-heading">
+
+        <h2>
+            А КОГДА
+
+            <em>РАБОТАЕШЬ ТЫ?</em>
+        </h2>
+
+        <p>
+            Выбери время, в котором тебе комфортнее
+            всего работать и концентрироваться.
+        </p>
+
+    </div>
+
+    <!-- INTERACTIVE CLOCK -->
+
+    <div class="rhythm-picker">
+
+        <div class="picker-clock">
+
+            <div class="picker-number n12">12</div>
+            <div class="picker-number n3">3</div>
+            <div class="picker-number n6">6</div>
+            <div class="picker-number n9">9</div>
+
+            <div class="picker-hand"></div>
+            <div class="picker-dot"></div>
+
+        </div>
+
+        <div class="picker-info">
+
+            <div class="selected-time">
+                <span id="timeValue">09:00</span>
+            </div>
+
+            <div class="time-description" id="timeDescription">
+                Классический дневной график.
+            </div>
+
+            <input
+                type="range"
+                min="0"
+                max="23"
+                value="9"
+                id="timeSlider"
+            >
+
+            <div class="range-labels">
+                <span>00:00</span>
+                <span>06:00</span>
+                <span>12:00</span>
+                <span>18:00</span>
+                <span>24:00</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RHYTHM CARDS -->
+
+    <div class="rhythm-cards">
+
+        <article class="rhythm-card morning">
+
+            <div class="card-time">06:00</div>
+
+            <div class="card-icon">☀</div>
+
+            <h3>РАННИЙ СТАРТ</h3>
+
+            <p>
+                День начинается раньше.
+                Вечер заканчивается раньше.
+            </p>
+
+        </article>
+
+        <article class="rhythm-card day">
+
+            <div class="card-time">12:00</div>
+
+            <div class="card-icon">◐</div>
+
+            <h3>ДНЕВНОЙ РИТМ</h3>
+
+            <p>
+                Классический вариант
+                с гибким началом рабочего дня.
+            </p>
+
+        </article>
+
+        <article class="rhythm-card night">
+
+            <div class="card-time">18:00</div>
+
+            <div class="card-icon">☾</div>
+
+            <h3>ВЕЧЕРНИЙ РИТМ</h3>
+
+            <p>
+                Для тех, чья концентрация
+                приходит ближе к вечеру.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section class="section how">
+
+    <div class="section-label">
+        03 / КАК ЭТО РАБОТАЕТ
+    </div>
+
+    <h2 class="center-title">
+        НЕ ОТМЕНЯЕМ
+
+        <em>РАСПИСАНИЕ.</em>
+    </h2>
+
+    <p class="center-subtitle">
+        Мы делаем его гибче.
+    </p>
+
+    <div class="schedule">
+
+        <div class="schedule-person">
+
+            <div class="person-figure figure-one"></div>
+
+            <div>
+                <strong>06:00 — 14:00</strong>
+                <span>РАННИЙ РИТМ</span>
+            </div>
+
+        </div>
+
+        <div class="schedule-person">
+
+            <div class="person-figure figure-two"></div>
+
+            <div>
+                <strong>12:00 — 20:00</strong>
+                <span>ДНЕВНОЙ РИТМ</span>
+            </div>
+
+        </div>
+
+        <div class="schedule-person">
+
+            <div class="person-figure figure-three"></div>
+
+            <div>
+                <strong>16:00 — 00:00</strong>
+                <span>ВЕЧЕРНИЙ РИТМ</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="shared-window">
+
+        <div class="window-clock">12—14</div>
+
+        <div>
+            <strong>ОБЩЕЕ ОКНО</strong>
+            <p>
+                Важные встречи и командная работа
+                остаются синхронизированными.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= BENEFITS ================= -->
+
+<section class="section benefits" id="future">
+
+    <div
+
+
+class="section-label">
+        04 / ЧТО МЕНЯЕТСЯ
+    </div>
+
+    <div class="benefit-grid">
+
+        <article class="benefit benefit-main">
+
+            <span>01</span>
+
+            <h3>
+                БОЛЬШЕ
+
+                <em>ФОКУСА</em>
+            </h3>
+
+            <div class="benefit-graphic focus-graphic">
+                <div class="focus-sun"></div>
+                <div class="focus-person"></div>
+            </div>
+
+        </article>
+
+        <article class="benefit">
+
+            <span>02</span>
+
+            <h3>МЕНЬШЕ
+СТРЕССА</h3>
+
+            <div class="sleep-graphic">
+                <div class="moon">☾</div>
+                <div class="zzz">Z
+z
+z</div>
+            </div>
+
+        </article>
+
+        <article class="benefit">
+
+            <span>03</span>
+
+            <h3>МЕНЬШЕ
+ЧАС ПИК</h3>
+
+            <div class="traffic-graphic">
+                <div class="road"></div>
+                <div class="car car1"></div>
+                <div class="car car2"></div>
+                <div class="car car3"></div>
+            </div>
+
+        </article>
+
+        <article class="benefit">
+
+            <span>04</span>
+
+            <h3>БОЛЬШЕ
+ЛИЧНОГО ВРЕМЕНИ</h3>
+
+            <div class="free-graphic">
+                <span>☀</span>
+                <span>⚽</span>
+                <span>♫</span>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- ================= CITY ================= -->
+
+<section class="city-section">
+
+    <div class="city-sun"></div>
+
+    <div class="city-copy">
+
+        <div class="section-label light">
+            05 / ГОРОД БУДУЩЕГО
+        </div>
+
+        <h2>
+            ГОРОД
+
+            НЕ ДОЛЖЕН
+
+            <em>СТОЯТЬ.</em>
+        </h2>
+
+        <p>
+            Если люди начинают и заканчивают день
+            в разное время, транспорт, сервисы
+            и городские пространства распределяют
+            нагрузку равномернее.
+        </p>
+
+    </div>
+
+    <div class="city-illustration">
+
+        <div class="building b1"></div>
+        <div class="building b2"></div>
+        <div class="building b3"></div>
+        <div class="building b4"></div>
+        <div class="building b5"></div>
+
+        <div class="city-road">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= QUESTIONS ================= -->
+
+<section class="section questions">
+
+    <div class="section-label">
+        06 / НО ЧТО НАСЧЁТ...
+    </div>
+
+    <div class="questions-layout">
+
+        <div class="question-big">
+            ?
+        </div>
+
+        <div class="accordion">
+
+            <button class="accordion-item">
+                <span>А если каждый будет жить по-своему?</span>
+                <b>+</b>
+            </button>
+
+            <div class="accordion-content">
+                Остаются общие временные окна для команд,
+                учёбы, медицины и других процессов,
+                где нужна синхронизация.
+            </div>
+
+            <button class="accordion-item">
+                <span>А как встречаться с другими?</span>
+                <b>+</b>
+            </button>
+
+            <div class="accordion-content">
+                Встречи заранее согласуются, а организации
+                могут использовать несколько временных окон.
+            </div>
+
+            <button class="accordion-item">
+                <span>А что с бизнесом?</span>
+                <b>+</b>
+            </button>
+
+            <div class="accordion-content">
+                Разные графики позволяют распределять
+                сотрудников и использовать более длинный
+                период работы.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FINAL ================= -->
+
+<section class="final-section" id="vote">
+
+    <div class="final-clock">
+
+        <div class="final-hand"></div>
+        <div class="final-center"></div>
+
+    </div>
+
+    <div class="final-copy">
+
+        <div class="eyebrow">
+            ВРЕМЯ — ЭТО РЕСУРС
+        </div>
+
+        <h2>
+            А КАКОЙ
+
+
+<em>ТВОЙ РИТМ?</em>
+        </h2>
+
+        <p>
+            Мы не предлагаем людям больше времени.
+            Мы предлагаем больше контроля
+            над тем временем, которое уже есть.
+        </p>
+
+        <div class="vote-box">
+
+            <span>ГОЛОСОВАНИЕ</span>
+
+            <strong>
+                Узнайте, как принять
+
+                участие в голосовании
+            </strong>
+
+            <a href="#" class="vote-button">
+                ПЕРЕЙТИ К ГОЛОСОВАНИЮ ↗
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <div>
+        ПРАВО
+
+        <span>НА СВОЙ РИТМ</span>
+    </div>
+
+    <p>
+        Время подстраивается
+
+        под человека.
+    </p>
+
+    <span class="footer-year">2026</span>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
